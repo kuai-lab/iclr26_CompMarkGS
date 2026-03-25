@@ -1,0 +1,25 @@
+name: CompMarkGS
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch-cuda=12.1
+  - plyfile=0.8.1
+  - python=3.8.20
+  - pip=24.2
+  - pytorch=2.3.0
+  - torchaudio=2.3.0
+  - torchvision=0.18.0
+  - pytorch-scatter
+  - tqdm
+  - pip:
+    - einops
+    - lpips
+    - laspy
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn
+    - pytorch_wavelets
+    - PyWavelets
+    - opencv-python
