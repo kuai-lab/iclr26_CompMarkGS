@@ -67,6 +67,14 @@ You can download the pretrained weights and results from the link below:
 
 - [link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_weight.zip)
 
+## Docker image loading and running
+
+We provide docker image and manual to reproduce our paper's result.
+
+- [docker image link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit)
+
+[Docker instructions](Docker_RUN.md)
+
 ## Training
 We provide the following scripts in `./scripts`:
 - `embed_watermark.sh`: watermark embedding (training)
