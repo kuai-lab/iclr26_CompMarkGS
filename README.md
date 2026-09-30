@@ -71,7 +71,7 @@ You can download the pretrained weights and results from the link below:
 
 We provide docker image and manual to reproduce our paper's result.
 
-- [docker image link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit)
+- [docker image link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit.tar)
 
 [Docker instructions](Docker_RUN.md)
 
