@@ -65,7 +65,7 @@ conda activate CompMarkGS
 
 You can download the pretrained weights and results from the link below:
 
-- [results.zip](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/results.zip)
+- [link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_weight.zip)
 
 ## Training
 We provide the following scripts in `./scripts`:
