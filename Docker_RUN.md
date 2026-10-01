@@ -75,23 +75,8 @@ bash docker/run.sh extract_compressed 4,5,6,7
 - **Model seed: 42.** Fixed in `train` (the official `--seed 42`); it is not a run argument.
 - **Message seed of the included checkpoints: 57494.** Recorded in `checkpoints/48bit/INFO.json` inside the image.
   `infer` and `extract_compressed` read it from there, so they take no seed argument.
-- To reproduce the numbers below by training, use message seed **57494**: `bash docker/run.sh train 57494`.
+- To reproduce, use message seed **57494**: `bash docker/run.sh train 57494`.
 
-Expected results with message seed 57494 (mean over scenes):
-
-| Command | Dataset | PSNR | SSIM | LPIPS | Bit Acc. (%) |
-|---|---|---:|---:|---:|---:|
-| `infer` / `train 57494` | NeRF Synthetic (8) | 31.89 | 0.963 | 0.041 | 92.54 |
-| | LLFF (8) | 25.36 | 0.800 | 0.206 | 99.26 |
-| | Mip-NeRF 360 (9) | 27.43 | 0.822 | 0.212 | 98.34 |
-| | **All (25)** | **28.19** | **0.860** | **0.155** | **96.78** |
-| `extract_compressed` | NeRF Synthetic (8) | 31.08 | 0.955 | 0.049 | 91.17 |
-| | LLFF (8) | 24.89 | 0.785 | 0.223 | 99.02 |
-| | Mip-NeRF 360 (9) | 26.37 | 0.778 | 0.231 | 97.83 |
-| | **All (25)** | **27.40** | **0.837** | **0.170** | **96.08** |
-
-`infer` reproduces these numbers exactly. The `infer` and `extract_compressed` summaries both print the difference to the stored per-scene reference values.
-Training is not bit-exact, so a new `train 57494` run differs slightly per scene (e.g. `nerf_synthetic/lego`: 91.60% vs 91.72% bit accuracy).
 
 ### Options
 
