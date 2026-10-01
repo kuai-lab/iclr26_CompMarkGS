@@ -65,13 +65,14 @@ conda activate CompMarkGS
 
 You can download the pretrained weights and results from the link below:
 
-- [link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_weight.zip)
+- [link for 'before compression'](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit_watermark_checkpoints_25scenes.tar.gz)
+- [link for 'after compression'](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_contextgs_checkpoints_25scenes.tar.gz)
 
 ## Docker image loading and running
 
 We provide docker image and manual to reproduce our paper's result.
 
-- [docker image link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit.tar)
+- [docker image link](https://kuaicv.synology.me/weights/iclr2026/CompMarkGS/compmarkgs_48bit_compressed.tar)
 
 [Docker instructions](Docker_RUN.md)
 
